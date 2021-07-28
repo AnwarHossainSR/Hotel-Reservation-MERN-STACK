@@ -14,3 +14,31 @@ code {
 .navbar-nav{
   margin-left: auto!important;
 }
+
+.smallimg{
+  height: 200px;
+  width: 100%!important;
+  border-radius: 5px !important;
+}
+
+h1{
+  font-size: 20px;
+}
+.btn{
+  box-shadow: none!important;
+  color: aliceblue!important;
+  background: black !important;
+}
+.bs{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  padding: 20px !important;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+}
+p{
+  font-weight: bold;
+}
+.bigimg{
+  height: 400px!important;
+  background-repeat: 5px !important;
+}

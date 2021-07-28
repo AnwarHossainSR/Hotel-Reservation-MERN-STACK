@@ -1,5 +1,27 @@
 const mongoose = require('mongoose');
 
+var mongoURL = 'mongodb+srv://admin:admin@cluster0.tqnvn.mongodb.net/mern-shyroom'
+
+mongoose.connect(mongoURL,{useUnifiedTopology: true, useNewUrlParser: true})
+
+var connection = mongoose.connection
+
+connection.on('connected', () => {
+    console.log('MongoDB Connection Succeeded.')
+})
+connection.on('error', () => {
+    console.log('Error in DB connection')
+})
+
+module.exports=mongoose
+
+
+
+
+
+
+/* const mongoose = require('mongoose');
+
 mongoose.Promise = global.Promise;
 
 // Connect MongoDB at default port 27017.
@@ -15,3 +37,4 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.tqnvn.mongodb.net/mern-shyr
 });
 
 module.exports = mongoose
+ */
